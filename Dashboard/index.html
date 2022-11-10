@@ -1,40 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
 </head>
+
 <body>
     <main class="dshbrd-wrap">
         <nav class="nav-top-wrap">
             <div class="brand-logo">
-
+                <img src="../assest/logo-main.jpg" alt="Unifo" width="80px">
             </div>
             <div class="search-nav-dshbrd">
                 <input type="text" name="search" id="">
+                <button id="searchNavBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div class="profile-wrapper">
-                <img src="" alt="user">
-                <div class="user-dtls">
-                    <span class="name-user"></span>
-                </div>
+                <img src="../assest/profile.jpeg" alt="user">
+                <p class="user-dtls">Sahil</p>
             </div>
         </nav>
+
         <div class="btm-dsgbrd-wrap">
             <nav class="nav-left-wrap">
-                <button class="home-navbtn"><i class="fa-regular fa-house"></i><span>Home</span></button>
-                <button class="bookmark-navbtn"><i class="fa-regular fa-bookmark"></i></i><span>Bookmark</span></button>
-                <button class="find-navbtn"><i class="fa-solid fa-magnifying-glass"></i><span>Home</span></button>
-                <button class="home-navbtn"><i class="fa-solid fa-house"></i><span>Home</span></button>
+                <div class="nav-left-top">
+                    <button class="home-navbtn"><i class="fa-solid fa-grip"></i><span>Home</span></button>
+                    <button class="bookmark-navbtn"><i
+                            class="fa-regular fa-bookmark"></i></i><span>Saved</span></button>
+                    <button class="article-navbtn"><i class="fa-regular fa-file"></i><span>Article</span></button>
+                    <button class="find-navbtn"><i class="fa-solid fa-magnifying-glass"></i><span>Find</span></button>
+                </div>
+                <div class="nav-left-btm">
+                    <button class="info-navbtn"><i class="fa-solid fa-info"></i><span>Info</span></button>
+                    <button class="logout-navbtn"><i
+                            class="fa-solid fa-arrow-right-from-bracket"></i><span>Exit</span></button>
+                </div>
             </nav>
             <div class="main-rght-cntnt">
-
+                <div class="main-cntnt-top">
+                    <div class="left-main-cntnt">
+                        <div class="top-user-welcme">
+                            <h3 class="dshbrd-h1msg">Hello, User <i class="fa-regular fa-user-circle"></i>.<span
+                                    class="highlight-txt">Great to see you!</span></h3>
+                            <span class="dshbrd-descrp">Here, for you some <span class="highlight-txt">quick
+                                    features</span>.</p>
+                        </div>
+                        <div class="right-brand-dashbrd">
+                            <img src="../assest/dashboard-brand.gif" alt="brand" width="250px">
+                        </div>
+                    </div>
+                    <div class="rght-main-cntnt">
+                        <!-- basically, this is section is to display bookmarked article -->
+                        <div class="top-rght-bkmrk">
+                            <h3><i class="fa-regular fa-bookmark"></i> Bookmark:</h3>
+                            <p>Your Saved Article list shown here.</p>
+                        </div>
+                        <div class="btm-rght-bkmark">
+                            <!-- bookmark list card view -->
+                            <a href="" class="card-saved-wrapper">
+                                <div class="left-savedcard-wrap">
+                                    <img src="../assest/article_logo.png" alt="article" width="39px">
+                                </div>
+                                <div class="right-saved-wrapper">
+                                    <div class="details-wrapper">
+                                        <h3>C Programming</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id quo
+                                            repudiandae, modi nobis libero aspernatur! Consequuntur quidem saepe rem non
+                                            alias hic consectetur nesciunt.</p>
+                                    </div>
+                                    <button class="delete-bookmarkedbtn"><i class="fa-solid fa-trash-can"></i></button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-cntnt-btm">
+                    <div class="track-article-wrapper">
+                        <div class="top-track-sect">
+                            <h3><i class="fa-solid fa-list"></i> ReadingList:</h3>
+                            <p>You was paused here.</p>
+                        </div>
+                        <div class="btm-track-sect">
+                            <a href="#" class="track-card-wrapper">
+                                <div class="left-trackcrd-wrap">
+                                    <img src="../assest/article_logo.png" alt="article" width="39px">
+                                </div>
+                                <div class="right-trackcrd-wrapper">
+                                    <h3>C Programming <span class="time-paused-trackcrd"><i
+                                                class="fa-regular fa-clock"></i> 12-5-2022</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id quo
+                                        repudiandae, modi nobis libero aspernatur! Consequuntur quidem saepe rem non
+                                        alias hic consectetur nesciunt.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="track-card-wrapper">
+                                <div class="left-trackcrd-wrap">
+                                    <img src="../assest/article_logo.png" alt="article" width="39px">
+                                </div>
+                                <div class="right-trackcrd-wrapper">
+                                    <h3>C Programming <span class="time-paused-trackcrd"><i
+                                                class="fa-regular fa-clock"></i> 12-5-2022</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id quo
+                                        repudiandae, modi nobis libero aspernatur! Consequuntur quidem saepe rem non
+                                        alias hic consectetur nesciunt.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="track-card-wrapper">
+                                <div class="left-trackcrd-wrap">
+                                    <img src="../assest/article_logo.png" alt="article" width="39px">
+                                </div>
+                                <div class="right-trackcrd-wrapper">
+                                    <h3>C Programming <span class="time-paused-trackcrd"><i
+                                                class="fa-regular fa-clock"></i> 12-5-2022</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id quo
+                                        repudiandae, modi nobis libero aspernatur! Consequuntur quidem saepe rem non
+                                        alias hic consectetur nesciunt.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="related-interest-wrapper">
+                        <div class="top-inte-article-sect">
+                            <div class="inte-artcle-secdetls">
+                                <h3><i class="fa-regular fa-file"></i> Related Article:</h3>
+                                <p>Your area of interested topic.</p>
+                            </div>
+                            <button id="changeInterest">Preference</button>
+                        </div>
+                        <div class="btm-inte-article-sect">
+                            <a href="#" class="card-interest-wrap">
+                                <div class="left-interest-wrap">
+                                    <img src="../assest/article_logo.png" alt="article" width="39px">
+                                </div>
+                                <div class="right-interest-wrapper">
+                                    <h3>C Programming <span class="tag-interest"><i class="fa-solid fa-hashtag"></i>
+                                            IT</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id quo
+                                        repudiandae, modi nobis libero aspernatur! Consequuntur quidem saepe rem non
+                                        alias hic consectetur nesciunt.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card-interest-wrap">
+                                <div class="left-interest-wrap">
+                                    <img src="../assest/article_logo.png" alt="article" width="39px">
+                                </div>
+                                <div class="right-interest-wrapper">
+                                    <h3>C Programming <span class="tag-interest"><i class="fa-solid fa-hashtag"></i>
+                                            IT</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id quo
+                                        repudiandae, modi nobis libero aspernatur! Consequuntur quidem saepe rem non
+                                        alias hic consectetur nesciunt.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card-interest-wrap">
+                                <div class="left-interest-wrap">
+                                    <img src="../assest/article_logo.png" alt="article" width="39px">
+                                </div>
+                                <div class="right-interest-wrapper">
+                                    <h3>C Programming <span class="tag-interest"><i class="fa-solid fa-hashtag"></i>
+                                            IT</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id quo
+                                        repudiandae, modi nobis libero aspernatur! Consequuntur quidem saepe rem non
+                                        alias hic consectetur nesciunt.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card-interest-wrap">
+                                <div class="left-interest-wrap">
+                                    <img src="../assest/article_logo.png" alt="article" width="39px">
+                                </div>
+                                <div class="right-interest-wrapper">
+                                    <h3>C Programming <span class="tag-interest"><i class="fa-solid fa-hashtag"></i>
+                                            IT</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id quo
+                                        repudiandae, modi nobis libero aspernatur! Consequuntur quidem saepe rem non
+                                        alias hic consectetur nesciunt.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="trending-article-wrapper">
+                        <div class="top-trending-sect">
+                            <h3><i class="fa-solid fa-arrow-trend-up"></i> Trending Article:</h3>
+                            <p>Your area of interested topic.</p>
+                        </div>
+                        <div class="btm-trending-sect">
+                            <a href="#" class="card-trending-wrap">
+                                <div class="left-trending-wrap">
+                                    <img src="../assest/article_logo.png" alt="article" width="39px">
+                                </div>
+                                <div class="right-trending-wrap">
+                                    <h3>C Programming</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga id quo
+                                        repudiandae, modi nobis libero aspernatur! Consequuntur quidem saepe rem non
+                                        alias hic consectetur nesciunt.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <script src="./script/dashboard.js"></script>
 </body>
+
 </html>
