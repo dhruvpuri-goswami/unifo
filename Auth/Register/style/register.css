@@ -1,7 +1,7 @@
 main{
     color: #773ade;
     color: #383838;
-    height: 100vh;
+    height: 97vh;
     width: 100%;
     display: flex;
 }
@@ -10,7 +10,7 @@ main{
 /* This is main container in which logo and all the other things includes */
 .login-wrap{
     width: 65%;
-    height: 80vh;
+    height: 90vh;
     margin: auto;
     display: flex;
     align-items: center;
