@@ -28,7 +28,7 @@ main{
 }
 
 .logo-wrap{
-    width: 450px;
+    width: 500px;
     margin: auto;
 }
 
@@ -125,64 +125,50 @@ input:focus{
 }
 
 
-
-
 @media only screen and (max-width:1450px) {
-    .login-wrap{
-     width: 80%;
-    }
- }
- @media only screen and (max-width:1200px) {
-    .login-wrap{
-     width: 90%;
-    }
- }
- @media only screen and (max-width:1050px) {
-    .logo-wrap{
-     width: 400px;
-    }
+   .login-wrap{
+    width: 80%;
+   }
+}
+@media only screen and (max-width:1200px) {
+   .login-wrap{
+    width: 90%;
+   }
+}
+@media only screen and (max-width:1050px) {
+   .logo-wrap{
+    width: 400px;
+   }
+}
+@media only screen and (max-width:850px) {
+   .logo-wrap{
+    width: 300px;
+   }
 
-    .btn-wrap{
-        width: 90%;
-    }
- }
- @media only screen and (max-width:850px) {
-    .logo-wrap{
-     width: 300px;
-    }
- 
-    .greetings-wrap > h1{
-     font-size: 24px;
-    }
-    .btn-wrap{
-        width: 100%;
-    }
- }
- 
- @media only screen and (max-width:650px) {
-    .logo-container{
-     display: none;
-    }
- 
-    .login-container{
-     width: 90%;
-     margin: auto;
-    }
- 
-    .uemail-wrap,.upass-wrap{
-     width: 90%;
-    }   
- 
-    .greetings-wrap > h1{
-     font-size: 24px;
-    }
- 
-    .btn-wrap{
-     margin: auto;
-     display: block;
-    }
+   .greetings-wrap > h1{
+    font-size: 24px;
+   }
+}
 
-    .btn-wrap>button{
-        margin: 20px 0;
-    }
- }
+@media only screen and (max-width:650px) {
+   .logo-container{
+    display: none;
+   }
+
+   .login-container{
+    width: 90%;
+    margin: auto;
+   }
+
+   .uemail-wrap,.upass-wrap{
+    width: 90%;
+   }   
+
+   .greetings-wrap > h1{
+    font-size: 24px;
+   }
+
+   .btn-wrap{
+    margin: auto;
+   }
+}
