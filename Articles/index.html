@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article | Create</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav-top-wrap">
+        <div class="brand-logo">
+            <img src="../assest/logo-main.jpg" alt="Unifo" width="80px">
+        </div>
+        <div class="article-dtls-wrap">
+            <i class="fa-regular fa-file"></i>
+            <p>Your Experience:</p>
+        </div>
+        <div class="profile-wrapper">
+            <img src="../assest/profile.jpeg" alt="user">
+            <p class="user-dtls">Sahil</p>
+        </div>
+    </nav>
+
+    <main class="main-article-create-wrap">
+        <div class="top-directory-wrap">
+            <p><a href="../Dashboard/">Dashboard</a> / Articles</p>
+        </div>
+        <div class="title-article-wrap">
+            <div class="wrapper-top-ttle">
+                <p>Enter Your Article Name:</p>
+                <div class="article-ttl-inpt">
+                    <i class="fa-regular fa-file"></i>
+                    <input type="text" name="articleName" id="articleName" placeholder="E.g. Class 10 Probability">
+                </div>
+            </div>
+            <button class="save-btn"><i class="fa-regular fa-circle-check"></i> Save</button>
+        </div>
+        <div class="main-article-section">
+            <div class="left-main-article">
+                <h3>Share Your Experience:</h3>
+                <textarea name="aboutArticle" id="aboutArticle" cols="30" rows="10" placeholder="Here, You can write you experience that you want to share with other..."></textarea>
+            </div>
+            <div class="rght-main-article">
+                <fieldset class="abstraction-sec">
+                    <legend><i class="fa-solid fa-bars"></i> Abstraction:</legend>
+                    <p>Share Brief introduction.</p>
+                    <textarea name="briefArticle" id="briefArticle" cols="30" rows="10"
+                        placeholder="Here, You can share main information about your article."></textarea>
+                </fieldset>
+                <fieldset class="document-sec">
+                    <legend><i class="fa-solid fa-file-circle-plus"></i> Documents:</legend>
+                    <p>Attach Your Handwritten Notes.</p>
+                    <input type="file" name="articleFileDoc" id="articleFileDoc">
+                    <p class="name-file">You selected <i class="fa-regular fa-file"></i> xyz.pdf</p>
+                </fieldset>
+                <fieldset class="video-sec">
+                    <legend><i class="fa-brands fa-youtube"></i> Video Lecture:</legend>
+                    <div class="left-inpt-wrap">
+                        <p>Attach Video link about this topic.</p>
+                        <input type="url" name="videoLink" id="videoLink" placeholder="youtube.com/">
+                    </div>
+                    <img src="../assest/youtube.png" alt="youtube" width="65px">
+                </fieldset>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

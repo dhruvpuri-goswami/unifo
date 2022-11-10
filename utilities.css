@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+}
+
+:root {
+    --brdr: #e1e1e1;
+    --theme: #7336e6;
+    --themeFont: #393939;
+    --descrp: #524c4c;
+    --close: rgb(255, 44, 44);
+}
+
+/* Scroll bar by default styling ---> */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* some common styling */
+.highlight-txt {
+    color: var(--theme);
+}
+
+.nav-top-wrap {
+    width: 100vw;
+    height: 8vh;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--brdr);
+    box-shadow: 0 0 2px var(--brdr);
+}
