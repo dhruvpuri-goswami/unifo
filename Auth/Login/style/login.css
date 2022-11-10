@@ -1,0 +1,188 @@
+main{
+    color: #773ade;
+    color: #383838;
+    height: 97vh;
+    width: 100%;
+    display: flex;
+}
+
+
+/* This is main container in which logo and all the other things includes */
+.login-wrap{
+    width: 65%;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    box-shadow:  0 -3em 3em rgba(0, 0, 0, 0.014), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.181);
+}
+
+/* This is for logo container */
+
+.logo-container{
+    width: 50%;
+    height: inherit;
+    align-items: center;
+    display: flex;
+}
+
+.logo-wrap{
+    width: 450px;
+    margin: auto;
+}
+
+.logo-wrap > img {
+    width: inherit;
+    margin-top: 10px;
+}
+
+
+/* This is for login container */
+.login-container{
+    width: 50%;
+    height: inherit;
+}
+
+.uemail-wrap,.upass-wrap{
+    width: 80%;
+    margin: 35px 0;
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15px;
+    border-radius: 5px;
+}
+
+input{
+    border: none;
+    font-size: medium;
+    margin: 1px 7px;
+    width: 100%;
+    height: inherit;
+    padding :  10px;
+}
+
+.uemail-wrap:focus-within, .upass-wrap:focus-within{
+    border: 1px solid #773ade;
+}
+
+input:focus{
+    outline: none;
+}
+
+.register-redirect{
+    float: right;
+    margin: 20px;
+    font-family: Verdana, sans-serif;
+}
+
+.register-redirect > a{
+    text-decoration: none;
+}
+
+/* This is for Welcome and Login Greetings */
+.greetings-wrap{
+    height: 40px;
+    margin: 115px 0 80px 0;
+    font-family: Verdana, sans-serif;
+    outline: none;
+}
+
+.greetings-wrap > h1{
+    margin: 10px 0;
+}
+.greetings-wrap > p{
+    margin: 3px;
+    color: rgba(0, 0, 0, 0.552);
+}
+
+
+/* This is for login and forget password */
+
+.btn-wrap{
+    margin: 40px 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-wrap > button {
+    background-color: #773ade;
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.btn-wrap>a{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+@media only screen and (max-width:1450px) {
+    .login-wrap{
+     width: 80%;
+    }
+ }
+ @media only screen and (max-width:1200px) {
+    .login-wrap{
+     width: 90%;
+    }
+ }
+ @media only screen and (max-width:1050px) {
+    .logo-wrap{
+     width: 400px;
+    }
+
+    .btn-wrap{
+        width: 90%;
+    }
+ }
+ @media only screen and (max-width:850px) {
+    .logo-wrap{
+     width: 300px;
+    }
+ 
+    .greetings-wrap > h1{
+     font-size: 24px;
+    }
+    .btn-wrap{
+        width: 100%;
+    }
+ }
+ 
+ @media only screen and (max-width:650px) {
+    .logo-container{
+     display: none;
+    }
+ 
+    .login-container{
+     width: 90%;
+     margin: auto;
+    }
+ 
+    .uemail-wrap,.upass-wrap{
+     width: 90%;
+    }   
+ 
+    .greetings-wrap > h1{
+     font-size: 24px;
+    }
+ 
+    .btn-wrap{
+     margin: auto;
+     display: block;
+    }
+
+    .btn-wrap>button{
+        margin: 20px 0;
+    }
+ }
