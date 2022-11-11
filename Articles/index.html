@@ -34,23 +34,23 @@
         </div>
         <div class="title-article-wrap">
             <div class="wrapper-top-ttle">
-                <p><i class="far fa-question-circle"></i> Enter Your Article Name:</p>
+                <p><i class="far fa-question-circle"></i> Enter Your Article Name:<span class="required-mark">*</span></p>
                 <div class="article-ttl-inpt">
                     <i class="fa-regular fa-file"></i>
                     <input type="text" name="articleName" id="articleName" placeholder="E.g. Class 10 Probability">
                 </div>
             </div>
-            <p class="validation-articlepage"><i class="fa-solid fa-triangle-exclamation"></i> You need filled all required filed.</p>
-            <button class="save-btn"><i class="fa-regular fa-circle-check"></i> Save</button>
+            <p class="validation-articlepage"><i class="fa-solid fa-triangle-exclamation"></i> Please, fill all required field.</p>
+            <button id="articleSaveBtn" class="save-btn"><i class="fa-regular fa-circle-check"></i> Save</button>
         </div>
         <div class="main-article-section">
             <div class="left-main-article">
-                <h3><i class="far fa-question-circle"></i> Share Your Experience:</h3>
+                <h3><i class="far fa-question-circle"></i> Share Your Experience:<span class="required-mark">*</span></h3>
                 <textarea name="aboutArticle" id="aboutArticle" cols="30" rows="10" placeholder="Here, You can write you experience that you want to share with other..."></textarea>
             </div>
             <div class="rght-main-article">
                 <fieldset class="abstraction-sec">
-                    <legend><i class="fa-solid fa-bars"></i> Abstraction:</legend>
+                    <legend><i class="fa-solid fa-bars"></i> Abstraction:<span class="required-mark">*</span></legend>
                     <p><i class="far fa-question-circle"></i> Share Brief introduction.</p>
                     <textarea name="briefArticle" id="briefArticle" cols="30" rows="10"
                         placeholder="Here, You can share main information about your article."></textarea>
@@ -73,6 +73,7 @@
         </div>
     </main>
 
+    <script src="./script/article.js"></script>
 </body>
 
 </html>

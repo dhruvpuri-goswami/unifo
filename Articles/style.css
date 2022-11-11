@@ -17,6 +17,14 @@
     --close: rgb(255, 44, 44);
 }
 
+
+.required-mark{
+    color: var(--close);
+    margin-left: 5px;
+    font-size: 18px; 
+}
+
+
 /* Scroll bar by default styling ---> */
 ::-webkit-scrollbar {
     width: 5px;
@@ -128,6 +136,10 @@
     font-size: 13px;
     color: var(--close);
     letter-spacing: 1.3px;
+    display: none;
+}
+.main-article-create-wrap .title-article-wrap .show-validation-articlepage{
+    display: block;
     animation-name: error-highlight;
     animation-timing-function: ease;
     animation-duration: 1s;
