@@ -45,7 +45,7 @@
                         </div>
                         <div class="btn-wrap">
                             <button type="submit" name="set_pass">SUBMIT</button>
-                            <a href="#">FORGOT PASSWORD?</a>
+                            <a href="login.php">Back to Login ?</a>
                         </div>
                     </div>
                 </form>

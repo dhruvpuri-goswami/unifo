@@ -41,7 +41,7 @@
     
                         <div class="btn-wrap">
                             <button type="submit" name="verify_otp">Verify OTP</button>
-                            <a href="#">BACK TO LOGIN ?</a>
+                            <a href="login.php">BACK TO LOGIN ?</a>
                         </div>
                     </div>
                 </form>
