@@ -15,7 +15,7 @@
 
 <body>
     <nav class="nav-top-wrap">
-        <div class="brand-logo">
+        <div id="articleID" idarticle="" class="brand-logo">
             <img src="../assest/logo-main.jpg" alt="Unifo" width="80px">
         </div>
         <div class="article-dtls-wrap">
@@ -58,7 +58,7 @@
                 <fieldset class="document-sec">
                     <legend><i class="fa-solid fa-file-circle-plus"></i> Documents:</legend>
                     <p><i class="far fa-question-circle"></i> Attach Your Handwritten Notes.</p>
-                    <input type="file" name="articleFileDoc" id="articleFileDoc">
+                    <input type="file" name="articleFileDoc[]" id="articleFileDoc" multiple>
                     <p class="error-msg">Make sure you uploaded documents must be in .pdf, .docx, .png, .jpg file format.</p>
                 </fieldset>
                 <fieldset class="video-sec">
