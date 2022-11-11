@@ -23,10 +23,11 @@
                 <button id="searchNavBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <a href="#" style="text-decoration: none;">
-            <div class="profile-wrapper">
-                <img src="../assest/avt.png" alt="user">
-                <p class="user-dtls">User</p>
-            </div></a>
+                <div class="profile-wrapper">
+                    <img src="../assest/avt.png" alt="user">
+                    <p class="user-dtls">User</p>
+                </div>
+            </a>
         </nav>
 
         <div class="btm-dsgbrd-wrap">
@@ -39,9 +40,10 @@
                     <button class="find-navbtn"><i class="fa-solid fa-magnifying-glass"></i><span>Find</span></button>
                 </div>
                 <div class="nav-left-btm">
-                    <button onclick="location.href = '../Info';" class="info-navbtn"><i class="fa-solid fa-info"></i><span>Info</span></button>
-                    <button class="logout-navbtn"><i
-                            class="fa-solid fa-arrow-right-from-bracket" onclick="location.href='../../unifo/Auth/Login/logout.php'"></i><span>Exit</span></button>
+                    <button onclick="location.href = '../Info';" class="info-navbtn"><i
+                            class="fa-solid fa-info"></i><span>Info</span></button>
+                    <button class="logout-navbtn"><i class="fa-solid fa-arrow-right-from-bracket"
+                            onclick="location.href='../../unifo/Auth/Login/logout.php'"></i><span>Exit</span></button>
                 </div>
             </nav>
             <div class="main-rght-cntnt">
@@ -209,6 +211,70 @@
             </div>
         </div>
     </main>
+
+    <div class="modalbox" id="modalbox">
+        <p>Preferences</p>
+        <div class="selectpreferenses">
+            <legend>Set Your Preferences!</legend>
+            <label class="container">Artificial Intelligence
+                <input type="checkbox" name="AI">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Machine Learning
+                <input type="checkbox" name="ML">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">C++
+                <input type="checkbox" name="C++">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Java
+                <input type="checkbox" name="Java">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Python
+                <input type="checkbox" name="Python">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">PHP
+                <input type="checkbox" name="PHP">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">JavaScript
+                <input type="checkbox" name="JavaScript">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">.NET
+                <input type="checkbox" name=".NET">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <div class="btns">
+            <button id="saveBtn">Save</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+    </div>
+    <script>
+        //for opening and closing modal box
+        document.getElementById('changeInterest').addEventListener('click', (e) => {
+            if (document.getElementById('modalbox').style.display == 'none' || document.getElementById('modalbox').style.display == false) {
+                document.getElementById('modalbox').style.display = "block";
+            } else {
+                document.getElementById('modalbox').style.display = "none";
+            }
+        });
+
+
+        //if user press cancel button close modalbox 
+        document.getElementById('cancelBtn').onclick = (e) => {
+            document.getElementById('modalbox').style.display = "none";
+        }
+
+        //if user press SAVE button store the selected data into databaes
+        document.getElementById('saveBtn').onclick = (e) => {
+            const selectedPreferences = document.querySelectorAll('input[type="checkbox"]:checked');
+        }
+    </script>
     <script src="./script/dashboard.js"></script>
 </body>
 
