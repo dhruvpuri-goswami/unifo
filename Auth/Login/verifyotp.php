@@ -1,28 +1,6 @@
 <?php
     session_start();
-    if (isset($_SESSION['user_id'])) {
-        session_destroy();
-    }
     include "connection.php";
-    if (isset($_POST['btn_login'])) {
-        $post_email = mysqli_real_escape_string($con, $_POST['user_email']);
-        $post_password = md5(mysqli_real_escape_string($con, $_POST['user_password']));
-        $sql = "SELECT user_id FROM tbl_user WHERE user_email='$post_email' and user_pass='$post_password'";
-        $result = mysqli_query($con, $sql);
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-        $count = mysqli_num_rows($result);
-        
-        if ($count > 0) {
-            $_SESSION['user_id'] = $row['user_id'];
-            $_SESSION['flag']="1";
-            sleep(2);
-            header("location: ../../Dashboard/index.html");
-        }
-        else {
-            sleep(2);
-            echo '<script>alert("Please Register Yourself")</script>';
-        }
-    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Verify OTP</title>
     <link rel="stylesheet" href="./style/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -51,25 +29,43 @@
                     <a href="../Register/register.php">Register</a>
                 </div>
                 <div class="greetings-wrap">
-                    <h1>Welcome Back!</h1>
-                    <p>Login to Continue</p>
+                    <h1>Hello User !</h1>
+                    <p>Verify to Continue</p>
                 </div>
                 <form action="" method="post">
                     <div class="login-credentials">
                         <div class="uemail-wrap">
                             <i class="fa-solid fa-user"></i>
-                            <input type="email" name="user_email" id="uemail" placeholder="Email">
+                            <input type="number" name="user_otp" id="uemail" placeholder="Enter OTP">
                         </div>
-                        <div class="upass-wrap">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="password" name="user_password" id="upass" placeholder="Password">
-                        </div>
+    
                         <div class="btn-wrap">
-                            <button type="submit" name="btn_login">Login</button>
-                            <a href="forgotpassword.php">FORGOT PASSWORD?</a>
+                            <button type="submit" name="verify_otp">Verify OTP</button>
+                            <a href="#">BACK TO LOGIN ?</a>
                         </div>
                     </div>
                 </form>
+                <?php
+                    if(isset($_REQUEST['verify_otp']))
+                    {
+                        $enteredOTP=$_REQUEST['user_otp'];
+                        $sessOTP=$_SESSION['otp'];
+                        if($enteredOTP==$sessOTP)
+                        {
+                            echo '<script>
+                        alert("OTP Verified Successfully...");
+                        window.location.href="setpassword.php";
+                        </script>';
+                        }
+                        else
+                        {
+                            echo '<script>
+                        alert("OTP not matched. Try Again...");
+                        window.location.href="forgotpassword.php";
+                        </script>';
+                        }
+                    }
+                ?>
             </div>
         </div>
     </main>
