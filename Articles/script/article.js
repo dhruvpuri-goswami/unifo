@@ -31,12 +31,22 @@ selarticleSaveBtn.addEventListener("click", ()=>{
             }).then((response)=>{
                 return response.text();
             }).then((actual_data)=>{
-                errMsg.style.color = "green";
-                errMsg.innerHTML = `<i class="fa-regular fa-circle-check"></i> Successfully, Saved You written article`;
-                errMsg.classList.add("show-validation-articlepage");
-                // setTimeout(() => {
-                //     window.location.href = "../Dashboard";
-                // }, 4000);
+                console.log(actual_data);
+                if(actual_data.includes("suucessfully inserted record!")){
+                    errMsg.style.color = "green";
+                    errMsg.innerHTML = `<i class="fa-regular fa-circle-check"></i> Successfully, Saved You written article`;
+                    errMsg.classList.add("show-validation-articlepage");
+                    // setTimeout(() => {
+                    //     window.location.href = "../Dashboard";
+                    // }, 4000);
+                }else{
+                    errMsg.style.color = "green";
+                    errMsg.innerHTML = `${actual_data}`;
+                    errMsg.classList.add("show-validation-articlepage");
+                    setTimeout(() => {
+                        errMsg.classList.remove("show-validation-articlepage");
+                    }, 3000);
+                }
             }).catch((error)=>{
                 console.log(error);
             })
