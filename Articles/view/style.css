@@ -1,6 +1,6 @@
 /* article nav details wrapper */
 .article-dtls-wrap{
-    width: 260px;
+    width: max-content;
     height: 100%;
 
     display: flex;
@@ -31,7 +31,7 @@
     width: 100%;
     height: 5%;
     font-size: 14px;
-    padding: 0 15px;
+    padding: 0 35px;
 }
 .article-view-main-wrap .top-directory-wrap p a{
     text-decoration: none;
@@ -41,7 +41,7 @@
 .article-view-main-wrap .title-article-view{
     width: 100%;
     height: 10%;
-    padding: 0 15px;
+    padding: 0 35px;
     font-size: 14px;
     margin: 5px 0;
     color: var(--themeFont);
