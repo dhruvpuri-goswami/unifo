@@ -52,6 +52,14 @@
 .article-view-main-wrap .title-article-view h3 span{
     color: var(--themeFont);
 }
+.article-view-main-wrap .title-article-view h3 button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 15px;
+}
 .article-view-main-wrap .title-article-view p{
     font-size: 13px;
     color: var(--themeFont);
