@@ -34,36 +34,37 @@
         </div>
         <div class="title-article-wrap">
             <div class="wrapper-top-ttle">
-                <p>Enter Your Article Name:</p>
+                <p><i class="far fa-question-circle"></i> Enter Your Article Name:</p>
                 <div class="article-ttl-inpt">
                     <i class="fa-regular fa-file"></i>
                     <input type="text" name="articleName" id="articleName" placeholder="E.g. Class 10 Probability">
                 </div>
             </div>
+            <p class="validation-articlepage"><i class="fa-solid fa-triangle-exclamation"></i> You need filled all required filed.</p>
             <button class="save-btn"><i class="fa-regular fa-circle-check"></i> Save</button>
         </div>
         <div class="main-article-section">
             <div class="left-main-article">
-                <h3>Share Your Experience:</h3>
+                <h3><i class="far fa-question-circle"></i> Share Your Experience:</h3>
                 <textarea name="aboutArticle" id="aboutArticle" cols="30" rows="10" placeholder="Here, You can write you experience that you want to share with other..."></textarea>
             </div>
             <div class="rght-main-article">
                 <fieldset class="abstraction-sec">
                     <legend><i class="fa-solid fa-bars"></i> Abstraction:</legend>
-                    <p>Share Brief introduction.</p>
+                    <p><i class="far fa-question-circle"></i> Share Brief introduction.</p>
                     <textarea name="briefArticle" id="briefArticle" cols="30" rows="10"
                         placeholder="Here, You can share main information about your article."></textarea>
                 </fieldset>
                 <fieldset class="document-sec">
                     <legend><i class="fa-solid fa-file-circle-plus"></i> Documents:</legend>
-                    <p>Attach Your Handwritten Notes.</p>
+                    <p><i class="far fa-question-circle"></i> Attach Your Handwritten Notes.</p>
                     <input type="file" name="articleFileDoc" id="articleFileDoc">
-                    <p class="name-file">You selected <i class="fa-regular fa-file"></i> xyz.pdf</p>
+                    <p class="error-msg">Make sure you uploaded documents must be in .pdf, .docx, .png, .jpg file format.</p>
                 </fieldset>
                 <fieldset class="video-sec">
                     <legend><i class="fa-brands fa-youtube"></i> Video Lecture:</legend>
                     <div class="left-inpt-wrap">
-                        <p>Attach Video link about this topic.</p>
+                        <p><i class="far fa-question-circle"></i> Attach Video link about this topic.</p>
                         <input type="url" name="videoLink" id="videoLink" placeholder="youtube.com/">
                     </div>
                     <img src="../assest/youtube.png" alt="youtube" width="65px">

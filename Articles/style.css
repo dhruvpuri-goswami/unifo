@@ -73,9 +73,31 @@
     justify-content: space-between;
     margin: 5px 0;
     color: var(--themeFont);
-    margin-bottom: 10px;
+    margin: 10px 0;
+    padding-bottom: 10px;
 }
-.wrapper-top-ttle p, .wrapper-top-ttle .article-ttl-inpt i{
+.main-article-create-wrap .title-article-wrap .validation-articlepage{
+    font-size: 13px;
+    color: var(--close);
+    letter-spacing: 1.3px;
+    animation-name: error-highlight;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes error-highlight{
+    from{
+        color: var(--close);
+    }to{
+        color: rgb(254, 196, 88);
+    }
+}
+.wrapper-top-ttle p{
+    font-size: 15px;
+}
+.wrapper-top-ttle .article-ttl-inpt i{
+    margin-left: 2px;
     font-size: 15px;
 }
 .wrapper-top-ttle .article-ttl-inpt{
@@ -86,7 +108,7 @@
     justify-content: space-between;
 }
 .wrapper-top-ttle .article-ttl-inpt input{
-    width: 90%;
+    width: 93%;
     border: none;
     outline: none;
     padding: 3px 5px;
@@ -100,6 +122,11 @@
     color: var(--theme);
     border: 1px solid var(--brdr);
     border-radius: 5px;
+    box-shadow: 1px 1px 1px var(--brdr);
+    cursor: pointer;
+}
+.main-article-create-wrap .title-article-wrap button:hover{
+    box-shadow:inset 1px 1px 1px var(--brdr);
 }
 
 .main-article-create-wrap .main-article-section{
@@ -111,16 +138,20 @@
     padding: 0 15px;
 }
 .main-article-section .left-main-article{
-    width: 75%;
+    width: 73%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    border-right: 1px solid var(--brdr);
 }
-.main-article-section .left-main-article h3{
+.main-article-section .left-main-article h3, .wrapper-top-ttle p{
     font-size: 15px;
-    color: var(--themeFont);
+    color: var(--theme);
+}
+.main-article-section .left-main-article h3 i, .wrapper-top-ttle p i{
+    color: var(--themeFont)
 }
 .main-article-section .left-main-article textarea{
     width: 95%;
@@ -130,6 +161,7 @@
     border-radius: 5px;
     outline: none;
     padding: 10px;
+    letter-spacing: 1.5px;
 }
 .main-article-section .rght-main-article{
     width: 25%;
@@ -145,7 +177,7 @@
     padding: 6px 10px;
     border: 1px solid var(--brdr);
     border-radius: 5px;
-    border-left: 3px solid rgb(61, 61, 255);
+    border-left: 3px solid var(--theme);
 }
 .main-article-section .rght-main-article> fieldset legend{
     padding: 0 8px;
@@ -185,12 +217,24 @@ input::file-selector-button {
     outline: none;
     border: 1px solid var(--brdr);
     background-color: transparent;
-    font-size: 13px;
-}
-.main-article-section .rght-main-article .document-sec .name-file{
     font-size: 12px;
+    box-shadow: 1px 1px 1px var(--brdr);
+    cursor: pointer;
+    margin-left: 35px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.3px;
     color: var(--theme);
 }
+input::file-selector-button:hover{
+    box-shadow:inset 1px 1px 1px var(--brdr);
+}
+.main-article-section .rght-main-article .document-sec .error-msg{
+    font-size: 12px;
+    color: var(--theme);
+    text-align: center;
+}
+
 
 /* video section styling */
 .main-article-section .rght-main-article .video-sec{
@@ -212,7 +256,7 @@ input::file-selector-button {
     outline: none;
     border-bottom: 1px solid var(--brdr);
     font-size: 12px;
-    color: var(--themeFont);
+    color: var(--theme);
     letter-spacing: 1.2px;
     margin-top: 5px;
 }
