@@ -68,7 +68,7 @@
                 <div class="btm-left-main-view">
                     <fieldset>
                         <legend><i class="fa-regular fa-file-lines"></i> Article:</legend>
-                        <h3>IT Engineering Articles: <button><i class="fa-solid fa-arrow-up-right-from-square"></i> Open</button></h3>
+                        <h3>IT Engineering Articles: <button onclick=inverseModal()><i class="fa-solid fa-arrow-up-right-from-square"></i> Open</button></h3>
                         <textarea name="articleorLink" id="articleorLink" cols="30" rows="10"></textarea>
                     </fieldset>
                 </div>
@@ -85,6 +85,30 @@
             </div>
         </div>
     </main>
+    <div class="modalbox" id="modalbox">
+        <div class="header">
+            <p>Title : </p>
+            <div class="close_icon">
+                <span id="close_modal">&#10060;</span>
+            </div>
+        </div>  
+        <div class="selectpreferenses">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda maxime numquam neque deserunt voluptates fuga, error explicabo dolores aliquid, minima quasi excepturi! Est labore magni, numquam nobis quo consequuntur hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam commodi consequatur laudantium, corporis incidunt maiores hic optio culpa sit ipsa error accusamus, necessitatibus, ipsum dolorum repellendus cumque ut tempora veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis veritatis quas modi unde porro, quis sequi illum veniam facere corporis dolorem odit nobis culpa natus dicta accusantium vel iure minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur maxime illo fuga corporis vitae accusantium aperiam delectus porro quia, omnis dolores, autem repellendus cupiditate ex voluptatibus ab dolor consequatur voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut inventore fugit officiis neque repellendus corrupti porro in obcaecati veritatis accusamus? Corporis, illum totam. Numquam mollitia, sit ab repellendus enim provident. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur porro laboriosam quisquam accusantium animi consequatur delectus obcaecati earum repudiandae, libero dolorem accusamus, sapiente pariatur asperiores deserunt quia officia perspiciatis est!
+        </div>
+    </div>
 </body>
 
+<script>
+    function inverseModal(){
+        if (document.getElementById('modalbox').style.display == 'none' || document.getElementById('modalbox').style.display == false) {
+                document.getElementById('modalbox').style.display = "block";
+            } else {
+                document.getElementById('modalbox').style.display = "none";
+            }
+    }
+
+    document.getElementById('close_modal').onclick =(e) =>{
+        document.getElementById('modalbox').style.display = 'none';
+    }
+</script>
 </html>
