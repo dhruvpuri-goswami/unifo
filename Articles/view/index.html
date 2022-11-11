@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article | Create</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav-top-wrap">
+        <div class="brand-logo">
+            <img src="../assest/logo-main.jpg" alt="Unifo" width="80px">
+        </div>
+        <div class="article-dtls-wrap">
+            <img src="../assest/folders.png" alt="Unifo" width="30px">
+            <p>Unifo's Article <sup>(Auto Generated)</sup></p>
+        </div>
+        <div class="profile-wrapper">
+            <img src="../assest/profile.jpeg" alt="user">
+            <p class="user-dtls">Sahil</p>
+        </div>
+    </nav>
+
+    <main class="article-view-main-wrap">
+        <div class="top-directory-wrap">
+            <p><a href="../Dashboard/">Dashboard</a> / Articles</p>
+        </div>
+        
+        <div class="title-article-view">
+            <h3>Related To: <span>IT Engineering</span></h3>
+            <p>Your selected topic's details given below.</p>
+        </div> 
+        
+        <div class="main-articleview-section">
+            <div class="left-main-article">
+                <div class="top-left-main-view">
+                    <fieldset>
+                        <legend>Documents</legend>
+                        <h3>Attached Documents about to this topic.:</h3>
+                        <div class="doc-list-wrap">
+
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Description</legend>
+                        <h3>Brief Description about this topic.</h3>
+                        <textarea name="breifArticle" id="breifArticle" cols="30" rows="10"></textarea>
+                    </fieldset>
+                </div>
+                <div class="btm-left-main-view">
+                    <fieldset>Articles</fieldset>
+                    <h3>IT Engineering Articles:</h3>
+                    <textarea name="articleorLink" id="articleorLink" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="rght-main-article">
+                <fieldset class="video-wrapper">
+                    <legend><i class="fa-solid fa-bars"></i> Video:</legend>
+                    <p><i class="far fa-question-circle"></i> Some easy video to understand more about this topic.</p>
+                    <textarea name="briefArticle" id="briefArticle" cols="30" rows="10"
+                        placeholder="Here, You can share main information about your article."></textarea>
+                </fieldset>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+}
+
+:root {
+    --brdr: #e1e1e1;
+    --theme: #7336e6;
+    --themeFont: #393939;
+    --descrp: #524c4c;
+    --close: rgb(255, 44, 44);
+}
+
+/* Scroll bar by default styling ---> */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* some common styling */
+.highlight-txt {
+    color: var(--theme);
+}
+
+.nav-top-wrap {
+    width: 100vw;
+    height: 8vh;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--brdr);
+    box-shadow: 0 0 2px var(--brdr);
+}
+
+/* nav profile view part */
+.nav-top-wrap .profile-wrapper {
+    width: 100px;
+    height: 70%;
+    border: 1px solid var(--brdr);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.nav-top-wrap .profile-wrapper img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    object-fit: fill;
+    margin-right: 8px;
+}
+
+.nav-top-wrap .profile-wrapper .user-dtls {
+    width: 50px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    white-space: nowrap;
+    text-transform: capitalize;
+    color: var(--themeFont);
+}

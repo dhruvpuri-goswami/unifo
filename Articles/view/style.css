@@ -1,0 +1,15 @@
+/* article wrapper */
+.article-dtls-wrap{
+    width: 260px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.article-dtls-wrap img{
+    margin-right: 8px;
+}
+.article-dtls-wrap p sup{
+    color: var(--theme);
+}
