@@ -5,3 +5,9 @@ here we attacheced **unifo.sql file**.
 please, first create database in your server with named **unifo** and then in that database import this(unifo.sql), you will get all tabels with relationship.
 
 Thanks in advance! if anything you will find wrong in this repository please let us know.
+
+# Dashboard Interface:
+<img src="https://github.com/Nayak-Sahil/unifo/blob/main/assest/Dashboard.png" alt="Dashboard">
+
+
+
